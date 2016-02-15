@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 
 echo "Setting Timezone & Locale to $3 & en_US.UTF-8"
@@ -10,7 +11,7 @@ sudo update-locale LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8
 echo ">>> Installing Base Packages"
 
 if [[ -z $1 ]]; then
-    github_url="https://raw.githubusercontent.com/fideloper/Vaprobash/master"
+    github_url="https://raw.githubusercontent.com/rpio/Vaprobash/master"
 else
     github_url="$1"
 fi
@@ -27,13 +28,13 @@ echo ">>> Installing *.xip.io self-signed SSL"
 
 SSL_DIR="/etc/ssl/xip.io"
 DOMAIN="*.xip.io"
-PASSPHRASE="vaprobash"
+PASSPHRASE="umclicksolutions"
 
 SUBJ="
-C=US
-ST=Connecticut
-O=Vaprobash
-localityName=New Haven
+C=MY
+ST=WP Kuala Lumpur
+O=Umclick Solutions
+localityName=Kuala Lumpur
 commonName=$DOMAIN
 organizationalUnitName=
 emailAddress=
